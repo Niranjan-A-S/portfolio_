@@ -1,7 +1,7 @@
 import { FC, memo, useCallback, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './styles';
-import { IParentProps } from './typings/component-props';
+import { theme } from '.';
+import { IParentProps } from '../typings/component-props';
 
 export const ThemeWrapper: FC<IParentProps> = memo(({ children }) => {
 
