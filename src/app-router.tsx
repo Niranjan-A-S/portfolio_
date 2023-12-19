@@ -1,8 +1,8 @@
 import { FC, createElement, memo, useCallback } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ROUTE_CONFIGURATIONS } from './data/navbar';
+import { ROUTE_CONFIGURATIONS } from './data/metadata';
 import { IRouteOptions } from './typings';
-import { Navbar } from './components/navbar';
+import { Navbar } from './components/navbar/navbar';
 
 export const AppRouter: FC = memo(() => {
 

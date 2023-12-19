@@ -8,6 +8,10 @@ export const StyledLogo = styled.span`
     font-weight: 600;
     color: ${({ theme }) => theme.secondaryText};
     cursor: pointer;
+
+    &:hover {
+        color: ${({ theme }) => theme.primaryText};
+    }
 `;
 
 export const Logo: FC = memo(() => {
