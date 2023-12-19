@@ -1,5 +1,3 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react';
 
-export const SkillsPage: FC = memo(() => {
-    return <>Skills</>
-});
+export const SkillsPage: FC = memo(() => <>Skills</>);

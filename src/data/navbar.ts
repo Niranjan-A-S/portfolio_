@@ -1,9 +1,9 @@
-import { AboutPage } from "../src/pages/about-page";
-import { ContactPage } from "../src/pages/contact-page";
-import { HomePage } from "../src/pages/home-page";
-import { ProjectsPage } from "../src/pages/projects-page";
-import { SkillsPage } from "../src/pages/skills-page";
-import { IRouteOptions } from "../typings";
+import { AboutPage } from '../pages/about-page';
+import { ContactPage } from '../pages/contact-page';
+import { HomePage } from '../pages/home-page';
+import { ProjectsPage } from '../pages/projects-page';
+import { SkillsPage } from '../pages/skills-page';
+import { IRouteOptions } from '../typings';
 
 export const ROUTE_CONFIGURATIONS: Array<IRouteOptions> = [
     {
@@ -31,4 +31,4 @@ export const ROUTE_CONFIGURATIONS: Array<IRouteOptions> = [
         path: '/contact',
         page: ContactPage
     }
-]
+];
