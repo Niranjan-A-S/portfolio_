@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
 import styled from 'styled-components';
-import { usePageRefresh } from '../hooks/use-page-refresh';
-import { MY_NAME } from '../data/constants';
+import { usePageRefresh } from '../../hooks/use-page-refresh';
+import { MY_NAME } from '../../data/constants';
 
 export const StyledLogo = styled.span`
     font-size: 34px;
