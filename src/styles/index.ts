@@ -10,7 +10,7 @@ export const theme = {
     dark: {
         body: '#0E0E10',
         primaryText: '#FFF',
-        secondaryText: 'orangered',
+        secondaryText: '#65B741',
         toggleBorder: '',
         background: ''
     }
