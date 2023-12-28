@@ -5,7 +5,7 @@ import { NavbarItems } from './navbar-items';
 
 export const StyledNavbar = styled.nav`
     padding: 30px 30px;
-    position: fixed;
+    position: sticky;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2,auto);
