@@ -9,9 +9,7 @@ export const StyledLogo = styled.span`
     color: ${({ theme }) => theme.secondaryText};
     cursor: pointer;
 
-    &:hover {
-        color: ${({ theme }) => theme.primaryText};
-    }
+    //TODO: Give some effects to the logo or replace the logo with some icon
 `;
 
 export const Logo: FC = memo(() => {
