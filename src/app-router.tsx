@@ -1,8 +1,8 @@
 import { FC, createElement, memo, useCallback } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AppLayout } from './components/app-layout';
 import { ROUTE_CONFIGURATIONS } from './data/metadata';
 import { IRouteOptions } from './typings';
-import { Navbar } from './components/navbar/navbar';
 
 export const AppRouter: FC = memo(() => {
 
@@ -12,10 +12,12 @@ export const AppRouter: FC = memo(() => {
 
     return (
         <BrowserRouter>
-            <Navbar />
-            <Routes>
-                {ROUTE_CONFIGURATIONS.map(renderRoute)}
-            </Routes>
+            <AppLayout>
+                <Routes>
+                    {ROUTE_CONFIGURATIONS.map(renderRoute)}
+                </Routes>
+            </AppLayout>
         </BrowserRouter>
+
     );
 });
