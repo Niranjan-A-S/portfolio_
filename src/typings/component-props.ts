@@ -7,8 +7,11 @@ export interface IParentProps {
 export interface ITextWithIconProps {
     name: string;
     icon: IconType;
+    isActive?: boolean;
 }
 
 export interface INavbarItemProps extends ITextWithIconProps {
     path: string;
+    isActive: boolean;
+    onClick?: () => void;
 }
