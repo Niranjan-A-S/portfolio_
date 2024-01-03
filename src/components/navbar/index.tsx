@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { NavbarItems } from './navbar-items';
 
 export const StyledNavbar = styled.nav`
-    padding: 30px 30px;
+    padding: 40px 30px;
     position: sticky;
     display: grid;
     justify-items: center;
@@ -16,7 +16,7 @@ export const StyledNavbar = styled.nav`
 
 export const Navbar: FC = memo(() => (
     <StyledNavbar>
-    <Logo />
-    <NavbarItems />
+        <Logo />
+        <NavbarItems />
     </StyledNavbar>
 ));

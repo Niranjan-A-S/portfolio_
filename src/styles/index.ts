@@ -4,12 +4,12 @@ export const themeObject = {
     light: {
         backgroundColor: '#FFF',
         primaryTextColor: '#0E0E10',
-        focusedTextColor: '#65B741'
+        focusedTextColor: '#4770ff'
     },
     dark: {
         backgroundColor: '#0E0E10',
         primaryTextColor: '#FFF',
-        focusedTextColor: '#65B741'
+        focusedTextColor: '#4770ff'
     }
 };
 

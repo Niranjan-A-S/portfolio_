@@ -25,11 +25,11 @@ const StyledLabel = styled.label`
 `;
 
 export const ToggleButton: FC = memo(() => {
-  const { isDark, toggleTheme } = useTheme();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <>
-      <StyledCheckbox type="checkbox" id="toggle" checked={isDark} onChange={toggleTheme} />
+      <StyledCheckbox type="checkbox" id="toggle" checked={isDarkMode} onChange={toggleTheme} />
       < StyledLabel htmlFor="toggle" />
     </>
   );

@@ -9,7 +9,11 @@ export const useThemeConfig = () => {
             return initialValue;
         }
         try {
-            return window.localStorage.getItem(LOCAL_STORAGE_THEME_KEY) || initialValue;
+            const theme = window.localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
+            if (!theme) {
+                window.localStorage.setItem(LOCAL_STORAGE_THEME_KEY, initialValue);
+            }
+            return theme || initialValue;
         } catch (error) {
             console.warn('Error reading theme from storage', error);
             return initialValue;

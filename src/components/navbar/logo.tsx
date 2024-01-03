@@ -8,7 +8,7 @@ export const StyledLogo = styled.span`
     font-weight: 600;
     color: ${({ theme }) => theme.focusedTextColor};
     cursor: pointer;
-
+    z-index:1;
     //TODO: Give some effects to the logo or replace the logo with some icon
 `;
 

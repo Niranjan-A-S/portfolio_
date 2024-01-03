@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 import { IParentProps } from '../typings/component-props';
-import { Navbar } from './navbar/navbar';
+import { Navbar } from './navbar';
 import { Footer } from './footer';
 import styled from 'styled-components';
 

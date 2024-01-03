@@ -5,14 +5,13 @@ import { ITextWithIconProps } from '../../typings/component-props';
 export const TextWithIconWrapper = styled.div<{ $isSelected?: boolean }>`
     display :grid;
     grid-template-columns :auto 1fr;
-    column-gap: 4px;
+    column-gap: 6px;
 
     &:hover {
         &>*{
             color: ${({ theme }) => theme.focusedTextColor};
             fill: ${({ theme }) => theme.focusedTextColor};
             transition: color 0.3s ease;
-
         }
     }
     

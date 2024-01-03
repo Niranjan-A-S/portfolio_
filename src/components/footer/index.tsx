@@ -11,10 +11,13 @@ export const StyledFooter = styled.footer`
     justify-content: center;
     align-items: center;
     gap:8px;
+    z-index:1;
+
 
     & > a {
         color: ${({ theme }) => theme.focusedTextColor};
         font-size: inherit;
+        font-weight: 600;
     }
     
     &> a:hover {
