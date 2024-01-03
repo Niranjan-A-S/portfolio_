@@ -1,31 +1,33 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const theme = {
+export const themeObject = {
     light: {
-        body: '',
-        text: '',
-        toggleBorder: '',
-        background: ''
+        backgroundColor: '#FFF',
+        primaryTextColor: '#0E0E10',
+        focusedTextColor: '#65B741'
     },
     dark: {
-        body: '#0E0E10',
-        primaryText: '#FFF',
-        secondaryText: '#65B741',
-        toggleBorder: '',
-        background: ''
+        backgroundColor: '#0E0E10',
+        primaryTextColor: '#FFF',
+        focusedTextColor: '#65B741'
     }
 };
 
 export const GlobalStyles = createGlobalStyle`
-    body , *  {
+    *  {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
         font-family: Ubuntu, sans-serif;
-        color: ${({ theme }) => theme.primaryText};
-        background-color: ${({ theme }) => theme.body};
+    }
+
+    body {
+        color: ${({ theme }) => theme.primaryTextColor};
+        background-color: ${({ theme }) => theme.backgroundColor};
         font-size: 16px;
+        transition: all 0.3s ease;
+
     }
 
     #root {
