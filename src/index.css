@@ -1,7 +1,7 @@
 :root {
     --toolbarBackground: #3f3f3c;
     --windowBackground: #242424;
-    --white: #fff;
+    --white: #ffffffde;
     --keyColor: #fbeb70;
     --valueColor: #14b914;
     --urlColor: #14b914;
@@ -9,6 +9,7 @@
     --hoverColor: #646cff;
     --normalFontSize: 16px;
     --footerFontSize: 12px;
+    --gray: #a9a9a9;
 }
 
 * {
@@ -62,4 +63,52 @@ body {
     position: sticky;
     bottom: 0;
     font-size: var(--footerFontSize);
+    line-height: 1.5;
+    justify-content: space-between;
+}
+
+.footer section {
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-4px {
+    gap: 4px;
+}
+
+.footer a {
+    color: var(--white)
+}
+
+.footer-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0px 5px;
+}
+
+.fullscreen {
+    font-size: 24px;
+}
+
+.footer-item:hover {
+    background-color: var(--gray)
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--windowBackground);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #64646480;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-left: .01rem solid gray;
 }
