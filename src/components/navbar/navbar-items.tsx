@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 
 const defaultStyles = css`
     display: grid;
-    column-gap: 24px;
+    column-gap: 30px;
     grid-template-columns: repeat(6,auto);
 
     @media screen and (max-width: 860px) {

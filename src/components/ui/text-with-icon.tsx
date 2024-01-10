@@ -6,6 +6,7 @@ export const TextWithIconWrapper = styled.div<{ $isSelected?: boolean }>`
     display :grid;
     grid-template-columns :auto 1fr;
     column-gap: 6px;
+    align-items: center;
 
     &:hover {
         &>*{
@@ -16,8 +17,6 @@ export const TextWithIconWrapper = styled.div<{ $isSelected?: boolean }>`
     }
     
     &>* {
-        font-size: 16px;
-        font-weight: 600;
         color: ${({ $isSelected, theme }) => ($isSelected ? theme.focusedTextColor : theme.primaryTextColor)};
         fill: ${({ $isSelected, theme }) => ($isSelected ? theme.focusedTextColor : theme.primaryTextColor)};
     }

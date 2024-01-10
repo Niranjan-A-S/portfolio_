@@ -4,12 +4,12 @@ export const themeObject = {
     light: {
         backgroundColor: '#FFF',
         primaryTextColor: '#0E0E10',
-        focusedTextColor: '#4770ff'
+        focusedTextColor: '#00B7D5'
     },
     dark: {
         backgroundColor: '#0E0E10',
         primaryTextColor: '#FFF',
-        focusedTextColor: '#4770ff'
+        focusedTextColor: '#00B7D5'
     }
 };
 
@@ -19,13 +19,15 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
-        font-family: Ubuntu, sans-serif;
+        font-family: system-ui,-apple-system;
     }
 
     body {
         color: ${({ theme }) => theme.primaryTextColor};
         background-color: ${({ theme }) => theme.backgroundColor};
         font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
         transition: all 0.3s ease;
 
     }

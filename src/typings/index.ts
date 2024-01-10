@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react';
-import { IconType } from 'react-icons';
 
 export interface IRouteOptions {
     name: string;
@@ -8,5 +7,6 @@ export interface IRouteOptions {
 }
 
 export interface INavbarItems extends Omit<IRouteOptions, 'page'> {
-    icon: IconType;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    icon: any;
 }

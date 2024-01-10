@@ -15,3 +15,8 @@ export interface INavbarItemProps extends ITextWithIconProps {
     isActive: boolean;
     onClick?: () => void;
 }
+
+export interface IIConLinkProps {
+    icon: IconType;
+    url: string;
+}

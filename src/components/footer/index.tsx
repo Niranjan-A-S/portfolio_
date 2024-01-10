@@ -1,11 +1,12 @@
-import { FC, memo } from 'react';
+import { FC, memo, useCallback } from 'react';
 import styled from 'styled-components';
-import { MY_NAME, Urls } from '../../data/constants';
+import { MY_NAME } from '../../data/constants';
 import { ToggleButton } from '../ui/toggle-button';
+import { IconLink } from '../ui/icon-link';
+import { IIConLinkProps } from '../../typings/component-props';
+import { FOOTER_LINKS } from '../../data/metadata';
 
 export const StyledFooter = styled.footer`
-    font-weight: 500;
-    font-size: 18px;
     padding: 14px;
     display: flex;
     justify-content: center;
@@ -14,10 +15,9 @@ export const StyledFooter = styled.footer`
     z-index:1;
 
 
-    & > a {
+    & > span {
         color: ${({ theme }) => theme.focusedTextColor};
-        font-size: inherit;
-        font-weight: 600;
+        font-weight: 500;
     }
     
     &> a:hover {
@@ -25,10 +25,31 @@ export const StyledFooter = styled.footer`
     }
 `;
 
+export const LinksWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    font-size: 20px;
+
+    &  * {
+        fill: ${({ theme }) => (theme.primaryTextColor)};  
+    }
+`;
+
 //TODO Remove this toggle button from footer
-export const Footer: FC = memo(() =>
-    <StyledFooter>
-        Developed by <a href={Urls.linkedin} target="_blank">{MY_NAME}</a> with 💚 {new Date().getFullYear()}
-        <ToggleButton />
-    </StyledFooter>
-);
+export const Footer: FC = memo(() => {
+
+    const renderIconLink = useCallback(({ url, icon }: IIConLinkProps) => (
+        <IconLink key={url} icon={icon} url={url} />
+    ), []);
+
+    return (
+        <StyledFooter>
+            <ToggleButton />
+            ©   {new Date().getFullYear()}   <span>{MY_NAME}</span>
+            <LinksWrapper>
+                {FOOTER_LINKS.map(renderIconLink)}
+            </LinksWrapper>
+        </StyledFooter>
+    );
+});
