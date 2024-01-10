@@ -1,0 +1,65 @@
+:root {
+    --toolbarBackground: #3f3f3c;
+    --windowBackground: #242424;
+    --white: #fff;
+    --keyColor: #fbeb70;
+    --valueColor: #14b914;
+    --urlColor: #14b914;
+    --color-beige-transparent: #f5f5dc20;
+    --hoverColor: #646cff;
+    --normalFontSize: 16px;
+    --footerFontSize: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: var(--normalFontSize);
+    font-weight: 400;
+    font-family: Source Code Pro, monospace;
+    color: var(--white);
+}
+
+#root {
+    position: absolute;
+    inset: 0;
+}
+
+.app {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 25px;
+}
+
+.window {
+    background-color: var(--windowBackground);
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    line-height: 24px;
+}
+
+.sidebar {
+    background-color: var(--toolbarBackground);
+    padding: 6px 12px 6px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar>li {
+    text-align: right;
+    list-style-type: none;
+}
+
+.content {}
+
+.footer {
+    background-color: var(--toolbarBackground);
+    position: sticky;
+    bottom: 0;
+    font-size: var(--footerFontSize);
+}
