@@ -2,14 +2,18 @@
     --toolbarBackground: #3f3f3c;
     --windowBackground: #242424;
     --white: #ffffffde;
-    --keyColor: #fbeb70;
-    --valueColor: #14b914;
+    --keyColor: #9CDCFE;
+        --valueColor: #CE9178;
     --urlColor: #14b914;
     --color-beige-transparent: #f5f5dc20;
     --hoverColor: #646cff;
     --normalFontSize: 16px;
     --footerFontSize: 12px;
     --gray: #a9a9a9;
+    --braces1: yellow;
+        --braces2: blue;
+        --braces3: purple;
+        --symbolColor: #D4D4D4;
 }
 
 * {
@@ -41,7 +45,7 @@ body {
     background-color: var(--windowBackground);
     display: grid;
     grid-template-columns: 60px 1fr;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 .sidebar {
@@ -56,7 +60,31 @@ body {
     list-style-type: none;
 }
 
-.content {}
+.content {
+    padding: 6px 0px
+}
+
+.symbol-color {
+    color: var(--symbolColor);
+}
+
+.object-key {
+    color: var(--keyColor) !important;
+}
+
+.entry {
+    color: var(--valueColor);
+}
+
+.array-value {
+    padding-left: 32px;
+    display: block;
+}
+
+.code-block {
+    padding-left: 32px;
+    border-left: .1px solid var(--symbolColor);
+}
 
 .footer {
     background-color: var(--toolbarBackground);

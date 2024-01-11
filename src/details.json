@@ -1,0 +1,32 @@
+{
+    "about": {
+        "personalInfo": {
+            "name": "Niranjan A S",
+            "summary": "Skilled in both front-end and back-end web development technologies, creating dynamic and responsive web applications that are both visually appealing and highly functional."
+        },
+        "contactInfo": {
+            "email": "niranjan0881@gmail.com",
+            "phone": "6238565292",
+            "linkedin": "https://www.linkedin.com/in/niranjan-as/",
+            "github": "https://github.com/Niranjan-A-S"
+        }
+    },
+    "experience": {
+        "Tequed Labs": {
+            "designation": "Full Stack Web Developer Intern",
+            "from": "September 2022",
+            "to": "October 2022",
+            "contributions": [
+                "Able to brainstorm ideas for the features required for UI Implementation.",
+                "Prototyped the functional UI components using vanilla JS which later converted to a React web application",
+                "Worked on a College Website Project."
+            ],
+            "techStack": [
+                "React JS",
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ]
+        }
+    }
+}
