@@ -8,7 +8,8 @@
             "email": "niranjan0881@gmail.com",
             "phone": "6238565292",
             "linkedin": "https://www.linkedin.com/in/niranjan-as/",
-            "github": "https://github.com/Niranjan-A-S"
+            "github": "https://github.com/Niranjan-A-S",
+            "stackOverflow": "https://stackoverflow.com/users/17740804/niranjan-a-s"
         }
     },
     "experience": {
@@ -70,7 +71,7 @@
             "link": "https://slate-note.netlify.app/"
         },
         "netflixClone": {
-            "description": "A clone of the popular Netflix web app with custom search functionality and pagination.",
+            "description": "A clone of the popular Netflix web app with custom search functionality, user authentication, streaming videos and much more built on top of NextJS.",
             "repo": "https://github.com/Niranjan-A-S/netflix-clone",
             "link": "https://netflix-clone-six-snowy-90.vercel.app/"
         }
