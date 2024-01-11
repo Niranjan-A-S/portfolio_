@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FC, memo, useCallback } from 'react';
-import details from '../../details.json';
+import details from '../../config/details.json';
 import { Bracket } from './bracket';
 import { CodeBlock } from './code-block';
 
