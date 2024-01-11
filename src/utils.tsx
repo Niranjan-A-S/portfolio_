@@ -44,3 +44,14 @@ export function renderObjectValue(item: any, cb: Callback) {
         <Comma />
     </>;
 }
+
+
+export const isUrl = (value: string) => {
+    try {
+        new URL(value);
+        return true;
+    } catch (error) {
+        return false;
+    }
+};
+

@@ -1,21 +1,19 @@
 :root {
-    --toolbarBackground: #3f3f3c;
-    --windowBackground: #242424;
+    --toolbar-background: #3f3f3c;
+    --window-background: #242424;
     --white: #ffffffde;
-    --keyColor: #9CDCFE;
-    --valueColor: #CE9178;
-    --urlColor: #14b914;
+    --key-color: #9CDCFE;
+    --value-color: #CE9178;
     --color-beige-transparent: #f5f5dc20;
-    --hoverColor: #646cff;
-    --normalFontSize: 16px;
-    --footerFontSize: 12px;
+    --normal-font-size: 16px;
+    --footer-font-size: 12px;
     --gray: #a9a9a9;
-    --braces1: yellow;
-    --braces2: blue;
-        --braces3: purple;
-        --symbolColor: #D4D4D4;
-    --lineColor: rgb(212, 212, 212, .3);
-        --selectionColor: rgba(63, 126, 197, 0.5)
+    --braces-purple: D4D4D4;
+    --braces-blue: blue;
+    --braces-yellow: purple;
+    --symbol-color: #D4D4D4;
+    --line-color: rgb(212, 212, 212, .3);
+    --selection-color: rgba(63, 126, 197, 0.5)
 }
 
 * {
@@ -26,7 +24,7 @@
 }
 
 body {
-    font-size: var(--normalFontSize);
+    font-size: var(--normal-font-size);
     font-weight: 400;
     font-family: Source Code Pro, monospace;
     color: var(--white);
@@ -44,14 +42,14 @@ body {
 }
 
 .window {
-    background-color: var(--windowBackground);
+    background-color: var(--window-background);
     display: grid;
     grid-template-columns: 60px 1fr;
     line-height: 25px;
 }
 
 .sidebar {
-    background-color: var(--toolbarBackground);
+    background-color: var(--toolbar-background);
     padding: 6px 12px 6px 24px;
     display: flex;
     flex-direction: column;
@@ -67,15 +65,15 @@ body {
 }
 
 .symbol-color {
-    color: var(--symbolColor);
+    color: var(--symbol-color);
 }
 
 .object-key {
-    color: var(--keyColor) !important;
+    color: var(--key-color) !important;
 }
 
 .entry {
-    color: var(--valueColor);
+    color: var(--value-color);
 }
 
 .array-value {
@@ -85,14 +83,19 @@ body {
 
 .code-block {
     padding-left: 32px;
-    border-left: .1px solid var(--lineColor);
+    border-left: .1px solid var(--line-color);
+}
+
+.link {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .footer {
-    background-color: var(--toolbarBackground);
+    background-color: var(--toolbar-background);
     position: sticky;
     bottom: 0;
-    font-size: var(--footerFontSize);
+    font-size: var(--footer-font-size);
     line-height: 1.5;
     justify-content: space-between;
 }
@@ -130,7 +133,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: var(--windowBackground);
+    background-color: var(--window-background);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -142,11 +145,12 @@ body {
     background-color: transparent;
     border-left: .01rem solid gray;
 }
+
 ::-moz-selection {
     /* Code for Firefox */
-    background: var(--selectionColor);
+    background: var(--selection-color);
 }
 
 ::selection {
-    background: var(--selectionColor)
+    background: var(--selection-color)
 }
