@@ -46,6 +46,7 @@ body {
     display: grid;
     grid-template-columns: 60px 1fr;
     line-height: 25px;
+    overflow: overlay;
 }
 
 .sidebar {
