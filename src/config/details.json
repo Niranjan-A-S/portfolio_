@@ -2,7 +2,7 @@
     "about": {
         "personalInfo": {
             "name": "Niranjan A S",
-            "summary": "Skilled in both front-end and back-end web development technologies, creating dynamic and responsive web applications that are both visually appealing and highly functional."
+            "summary": "Skilled in both front-end and back-end development technologies, creating dynamic and responsive applications that are both visually appealing and highly functional."
         },
         "contactInfo": {
             "email": "niranjan0881@gmail.com",
@@ -17,16 +17,84 @@
             "from": "September 2022",
             "to": "October 2022",
             "contributions": [
-                "Able to brainstorm ideas for the features required for UI Implementation.",
-                "Prototyped the functional UI components using vanilla JS which later converted to a React web application",
-                "Worked on a College Website Project."
+                "Proven ability to brainstorm ideas for the features required for UI Implementation. Active involvement in ideation sessions. Creative ideation for UI features. Contributed to design discussions.",
+                "Demonstrated proficiency in prototyping functional UI components using vanilla JS, later converted to a React web application. Expertise in prototyping. Seamless integration into React application.",
+                "Significant contribution to a College Website Project. Key role in project development. Collaborative efforts for enhanced functionality."
             ],
-            "techStack": [
-                "React JS",
+            "majorTechStack": [
                 "JavaScript",
-                "HTML",
-                "CSS"
+                "React JS",
+                "Node JS",
+                "Express JS",
+                "MongoDB"
+            ],
+            "certification": "https://drive.google.com/file/d/13lul8RSEgop4lIHEGVXIObpVwYfoJpUA/view"
+        },
+        "AgilePoint": {
+            "designation": "Software Engineer",
+            "from": "August 2022",
+            "to": "Present",
+            "contributions": [
+                "Collaborated with the Product Development team to prototype the client-side Kanban Board project. The prototype was sent for further development, contributing to the ongoing upgrades of the company's product.",
+                "Designed and implemented the complete screens for the AgilePoint Server Configuration tool from scratch. The final product is set to be released as a Single Page Application.",
+                "Worked closely with the AgilePoint Portal Settings Team to enhance features for seamless deployment.",
+                "Currently engaged with the AgilePoint Portal VNxt Backend Team, serving as a vital gateway for the company's product. Responsibilities include managing user authentication, module registration, access rights, and more."
+            ],
+            "majorTechStack": [
+                "Nest JS",
+                "Node JS",
+                "Fastify JS",
+                "React JS",
+                "TypeScript",
+                "JavaScript",
+                "MSSQL"
+            ],
+            "certifications": [
+                "https://drive.google.com/file/d/1uQ9-gaU64ExL5SYby_yjRdgn8QWE0-ME/view?usp=sharing",
+                "https://drive.google.com/file/d/1UB6CJ8xI3iFFnJZIVeRhOuHnprWfpZo_/view?usp=sharing"
             ]
         }
+    },
+    "projects": {
+        "cryptox": {
+            "description": "A command line application built in Node.js that provides users with the ability to check the price of various cryptocurrencies in their desired currency format. It supports functionalities such as adding, removing, and displaying API keys, as well as specifying the cryptocurrency and currency for conversion.",
+            "repo": "https://github.com/Niranjan-A-S/cryptox"
+        },
+        "chatgpt-cli": {
+            "description": "A command line application that allows users to access the OpenAI's ChatGPT API and generate text based on their input.",
+            "repo": "https://github.com/Niranjan-A-S/chatgpt-cli"
+        },
+        "slate": {
+            "description": "A complete note-taking app with markdown support and search filters utilizing the browser's local storage as DB",
+            "repo": "https://github.com/Niranjan-A-S/Slate",
+            "link": "https://slate-note.netlify.app/"
+        },
+        "netflixClone": {
+            "description": "A clone of the popular Netflix web app with custom search functionality and pagination.",
+            "repo": "https://github.com/Niranjan-A-S/netflix-clone",
+            "link": "https://netflix-clone-six-snowy-90.vercel.app/"
+        }
+    },
+    "education": {
+        "Bachelor of Engineering": {
+            "institution": "Rajarajeswari College  of Engineerings",
+            "fieldOfStudy": "Computer Science and Engineering",
+            "from": "2018",
+            "to": "2022"
+        },
+        "Higher Secondary": {
+            "institution": "St Mary's Higher Secondary School",
+            "fieldOfStudy": "Science",
+            "from": "2016",
+            "to": "2018"
+        }
+    },
+    "certifications": [
+        "https://www.freecodecamp.org/certification/niranjan2602/javascript-algorithms-and-data-structures",
+        "https://drive.google.com/file/d/13lul8RSEgop4lIHEGVXIObpVwYfoJpUA/view?usp=sharing",
+        "https://drive.google.com/file/d/1N304OU0Id49ugfnqJQI93_qK5zkHXcQW/view?usp=sharing"
+    ],
+    "source": {
+        "resume": "https://drive.google.com/file/d/1vLQ5g-_j1gvkp4FDriri8i14ouyYVQR2/view?usp=sharing"
     }
 }
