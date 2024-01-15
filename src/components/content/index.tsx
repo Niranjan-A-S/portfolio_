@@ -4,8 +4,7 @@ import details from '../../config/details.json';
 import { Bracket } from './bracket';
 import { CodeBlock } from './code-block';
 
-export const Content: FC = memo(forwardRef<HTMLDivElement, any>((_, ref) => {
-
+export const Content: FC<any> = memo(forwardRef<HTMLDivElement, any>((_, ref) => {
     const renderCodeBlock = useCallback((details: any) => Object.entries(details).map(([key, value]) => (
         <CodeBlock
             key={key}
