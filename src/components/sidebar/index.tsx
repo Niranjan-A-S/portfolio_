@@ -1,8 +1,12 @@
-import { FC, memo, useCallback } from 'react';
+import { FC, memo, useCallback, useMemo } from 'react';
 
-export const Sidebar: FC = memo(() => {
-    //TODO: Need to generate the numbers dynamically
-    const renderLineNumbers = useCallback(() => Array(130).fill(0).map((_, index) => <li key={index} className='line-number'>{index + 1}</li>), []);
+export interface ISidebarProps {
+    contentHeight: number;
+}
+
+export const Sidebar: FC<ISidebarProps> = memo(({ contentHeight }) => {
+    const numberOfLines = useMemo(() => Math.floor(contentHeight / 25), [contentHeight]);
+    const renderLineNumbers = useCallback(() => Array(numberOfLines).fill(0).map((_, index) => <li key={index} className='line-number'>{index + 1}</li>), [numberOfLines]);
 
     return (
         <div className='sidebar'>

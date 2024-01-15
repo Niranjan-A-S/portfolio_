@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { FC, memo, useCallback } from 'react';
+import { FC, forwardRef, memo, useCallback } from 'react';
 import details from '../../config/details.json';
 import { Bracket } from './bracket';
 import { CodeBlock } from './code-block';
 
-export const Content: FC = memo(() => {
+export const Content: FC = memo(forwardRef<HTMLDivElement, any>((_, ref) => {
 
     const renderCodeBlock = useCallback((details: any) => Object.entries(details).map(([key, value]) => (
         <CodeBlock
@@ -14,9 +14,9 @@ export const Content: FC = memo(() => {
             callback={renderCodeBlock} />
     )), []);
 
-    return <main className='content'>
+    return <div className='content' ref={ref}>
         <Bracket />
         {renderCodeBlock(details)}
         <Bracket isClosed />
-    </main>;
-});
+    </div>;
+}));
