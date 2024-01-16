@@ -13,7 +13,7 @@ export const Content: FC<any> = memo(forwardRef<HTMLDivElement, any>((_, ref) =>
             callback={renderCodeBlock} />
     )), []);
 
-    return <div className='content' ref={ref} contentEditable spellCheck={false}>
+    return <div className='content' ref={ref} spellCheck={false}>
         <Bracket />
         {renderCodeBlock(details)}
         <Bracket isClosed />
