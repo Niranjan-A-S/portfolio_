@@ -1,18 +1,18 @@
 {
-    "about": {
+    "#about": {
         "personalInfo": {
             "name": "Niranjan A S",
             "summary": "Skilled in both front-end and back-end development technologies, creating dynamic and responsive applications that are both visually appealing and highly functional."
         },
         "contactInfo": {
-            "email": "niranjan0881@gmail.com",
-            "phone": "6238565292",
-            "linkedin": "https://www.linkedin.com/in/niranjan-as/",
-            "github": "https://github.com/Niranjan-A-S",
-            "stackOverflow": "https://stackoverflow.com/users/17740804/niranjan-a-s"
+            "Email": "niranjan0881@gmail.com",
+            "Phone": "6238565292",
+            "Linkedin": "https://www.linkedin.com/in/niranjan-as/",
+            "Github": "https://github.com/Niranjan-A-S",
+            "Stack Overflow": "https://stackoverflow.com/users/17740804/niranjan-a-s"
         }
     },
-    "experience": {
+    "#experience": {
         "Tequed Labs": {
             "designation": "Full Stack Web Developer Intern",
             "from": "September 2022",
@@ -56,27 +56,27 @@
             ]
         }
     },
-    "projects": {
+    "#projects": {
         "cryptox": {
             "description": "A command line application built in Node.js that provides users with the ability to check the price of various cryptocurrencies in their desired currency format. It supports functionalities such as adding, removing, and displaying API keys, as well as specifying the cryptocurrency and currency for conversion.",
             "repo": "https://github.com/Niranjan-A-S/cryptox"
         },
-        "chatgpt-cli": {
+        "ChatGPT-CLI": {
             "description": "A command line application that allows users to access the OpenAI's ChatGPT API and generate text based on their input.",
             "repo": "https://github.com/Niranjan-A-S/chatgpt-cli"
         },
-        "slate": {
+        "Slate": {
             "description": "A complete note-taking app with markdown support and search filters utilizing the browser's local storage as DB",
             "repo": "https://github.com/Niranjan-A-S/Slate",
             "link": "https://slate-note.netlify.app/"
         },
-        "netflixClone": {
+        "Netflix Clone": {
             "description": "A clone of the popular Netflix web app with custom search functionality, user authentication, streaming videos and much more built on top of NextJS.",
             "repo": "https://github.com/Niranjan-A-S/netflix-clone",
             "link": "https://netflix-clone-six-snowy-90.vercel.app/"
         }
     },
-    "education": {
+    "#education": {
         "Bachelor of Engineering": {
             "institution": "Rajarajeswari College  of Engineerings",
             "fieldOfStudy": "Computer Science and Engineering",
@@ -90,12 +90,12 @@
             "to": "2018"
         }
     },
-    "certifications": [
+    "#certifications": [
         "https://www.freecodecamp.org/certification/niranjan2602/javascript-algorithms-and-data-structures",
         "https://drive.google.com/file/d/13lul8RSEgop4lIHEGVXIObpVwYfoJpUA/view?usp=sharing",
         "https://drive.google.com/file/d/1N304OU0Id49ugfnqJQI93_qK5zkHXcQW/view?usp=sharing"
     ],
-    "source": {
+    "#source": {
         "resume": "https://drive.google.com/file/d/1vLQ5g-_j1gvkp4FDriri8i14ouyYVQR2/view?usp=sharing"
     }
 }
